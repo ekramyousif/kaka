@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		//creating a construction function
+		function vehicle()
+
+		{
+		   this.vehicleName="vehicleName";
+		   throw new Error("you cannot create an instance os Absrract class");
+	 }
+	 vehicle.prototype.display=function()
+	 {
+	 	  return "vehicle is: "+this.vehicleName;
+	 	  }
+	 	  	//creating a constrctor function
+	 	  	function Bike(vehicleName)
+	 	  	{
+	 	  		this.vehicleName=vehicleName;
+	 	  		}
+	 	  	//creating object without using the functoin constructor
+	 	  	Bike.prototype=Object.create(vehicle.prototype);
+	 	  	var bike=new Bike("Honda");
+	 	  	document.writeln(bike.display());*/
+
+	 	  	//creating a construction functon
+
+	 	  	function vehicle()
+	 	  	{
+	 	  		this.vehicleName=vehicleName;
+	 	  		throw new Error("you cannot create an instance of Anstract class");
+
+        }
+        //create a constructor  function
+        function Bike(vehicleName)
+        {
+        	this.vehicleName=vehicleName;
+        }
+        Bike.prototype=Object.create(vehicle.prototype);
+        var bike=new Bike("Honda");
+        document.writeln(bike instanceof vehicle);
+        document.writeln(bike instanceof Bike);
+  </script>
+ 
+</body>
+</html>

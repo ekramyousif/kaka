@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<script>
+	function showOrHideAns(btn){
+		var dvpan = document.getElementById("dvpan");
+		if(btn.value == "show Answer"){
+			dvpan.style.display = "block";
+			btn.value = "Hide Answer";
+
+		}
+		else{
+			dvpan.style.display = "none";
+			btn.value ="show Answer";
+		}
+	}
+</script>
+</head>
+
+<body>
+	what is javascript?
+
+  <br>
+
+	<div id="dvpan" style="display: none">
+
+		<ol>
+			<li>It is scripting language</li>
+			<li>It iS used to create back end function </li>
+			<li>It is for dynamism of the website</li>
+		</ol>
+		
+	</div>
+	<input type="button" value="show Answer" id="btn" onclick="showOrHideAns(this);" >
+	<br>
+</body>
+</html>

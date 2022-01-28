@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting arrays in javascript</title>
+</head>
+<body>
+
+    <span id = "vitamin"></span>
+    <br><br>
+    <span id = "num"></span>
+
+    <br><br>
+    <button oncliik = "sortArray();">click</button>
+    <button onclick = "sortNumbers">sort number</button>
+
+    <script>
+        var fruits = ["Banana","Pineaoole","Pawpaw","lemon","Mango","Orange","Avocado",];
+        
+
+        document.getElementById("vitamin").innerHTML = fruits;
+
+        function sortArray(){
+            fruits.sort();
+            fruits.reverse();
+        
+
+            document.getElementById("vitamin").inneHTML = fruits;
+        }
+
+            var numbers = [3,4,10,5,40,1,60];
+            
+            document.getElementById("num").innerHTML = numbers;
+            function sortNnumbers(){
+                numbers.sort(function(a,b) {return a - b});
+                document.getElementById("num").innerHTML = number;
+            } 
+                
+                
+                    
+            
+            
+
+        
+    </script>
+    
+</body>
+</html>
